@@ -1,0 +1,6 @@
+2017-03-25 11:18:02,856  INFO AnnotationConfigEmbeddedWebApplicationContext:982 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b14c583: startup date [Wed Mar 22 23:17:57 CST 2017]; root of context hierarchy
+2017-03-25 11:18:02,859  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-03-25 11:18:02,860  INFO AnnotationMBeanExporter:241 - Unregistering JMX-exposed beans
+2017-03-25 11:18:02,875  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-25 11:18:02,887  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-25 11:18:02,967  INFO HikariPool:242 - HikariPool-1 - Closed.

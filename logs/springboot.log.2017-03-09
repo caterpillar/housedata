@@ -1,0 +1,1572 @@
+2017-03-09 08:39:58,721  INFO AnnotationConfigEmbeddedWebApplicationContext:982 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50f6ac94: startup date [Wed Mar 08 22:44:54 CST 2017]; root of context hierarchy
+2017-03-09 08:39:58,834  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-03-09 08:39:58,836  INFO AnnotationMBeanExporter:241 - Unregistering JMX-exposed beans
+2017-03-09 08:39:58,843  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 08:39:58,847  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 08:39:58,859  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 09:46:22,786  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 09:46:22,800  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 09:46:39,698  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 09:46:39,738  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 09:47:36,683  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 09:47:36,698  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 09:48:12,804  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 09:48:12,823  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 09:59:33,305  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 09:59:33,338  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 09:59:47,309 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '//div[@class='nhouse_list']//div[@class='nlcd_name']': unexpected token at '//div[@class='nhouse_list']//div[@class='nlcd_name']'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:196)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:53)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:39)
+	at org.jsoup.select.Selector.<init>(Selector.java:83)
+	at org.jsoup.select.Selector.select(Selector.java:105)
+	at org.jsoup.nodes.Element.select(Element.java:273)
+	at us.codecraft.webmagic.selector.CssSelector.selectElements(CssSelector.java:93)
+	at us.codecraft.webmagic.selector.HtmlNode.selectElements(HtmlNode.java:71)
+	at us.codecraft.webmagic.selector.HtmlNode.$(HtmlNode.java:110)
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:21)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:00:33,784  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:00:33,803  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:00:44,874 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '//div[@class='nhouse_list']': unexpected token at '//div[@class='nhouse_list']'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:196)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:53)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:39)
+	at org.jsoup.select.Selector.<init>(Selector.java:83)
+	at org.jsoup.select.Selector.select(Selector.java:105)
+	at org.jsoup.nodes.Element.select(Element.java:273)
+	at us.codecraft.webmagic.selector.CssSelector.selectElements(CssSelector.java:93)
+	at us.codecraft.webmagic.selector.HtmlNode.selectElements(HtmlNode.java:71)
+	at us.codecraft.webmagic.selector.HtmlNode.$(HtmlNode.java:110)
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:21)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:04:07,995  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:04:08,025  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:05:03,240  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:05:03,257  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:21:29,628  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:21:29,645  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:21:50,457  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:21:50,457  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:23:21,545  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:26:35,202  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:26:56,434  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:26:57,446  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:26:58,969  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:27:00,594  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:27:01,681  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:27:03,361  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:27:07,984  WARN HttpClientDownloader:104 - download page http://beishangwan.fang.com/villa/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:27:09,036  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:27:09,991  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:27:11,789  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:27:14,208  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 10:27:15,066  WARN HttpClientDownloader:104 - download page http://yushoufuzr.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:27:16,070  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 10:27:16,582  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 10:27:18,601  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 10:27:18,941  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 10:27:20,951  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 10:27:21,511  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 10:27:23,316  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 10:27:23,907  INFO HttpClientDownloader:87 - downloading page http://shanghainianhuaxy.fang.com/
+2017-03-09 10:27:26,766  INFO HttpClientDownloader:87 - downloading page http://lanmeijuntingtr.fang.com/
+2017-03-09 10:27:27,768  INFO HttpClientDownloader:87 - downloading page http://xinshijiekd.fang.com/
+2017-03-09 10:27:29,212  INFO HttpClientDownloader:87 - downloading page http://283788.fang.com/
+2017-03-09 10:27:30,112  INFO HttpClientDownloader:87 - downloading page http://xingfuliyc.fang.com/
+2017-03-09 10:27:33,803  INFO HttpClientDownloader:87 - downloading page http://xinyijiating.fang.com/
+2017-03-09 10:27:35,936  INFO HttpClientDownloader:87 - downloading page http://aimechengshi.fang.com/
+2017-03-09 10:27:36,182  INFO HttpClientDownloader:87 - downloading page http://jimujimujd.fang.com/
+2017-03-09 10:27:38,212  INFO HttpClientDownloader:87 - downloading page http://nanjingxilugongguan.fang.com/
+2017-03-09 10:27:39,525  INFO HttpClientDownloader:87 - downloading page http://tiandiyunshujd.fang.com/
+2017-03-09 10:27:44,674  WARN HttpClientDownloader:104 - download page http://tiandiyunshujd.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:27:45,578  INFO HttpClientDownloader:87 - downloading page http://fuxinglongyu.fang.com/
+2017-03-09 10:27:45,728  INFO HttpClientDownloader:87 - downloading page http://shanghaipailj.fang.com/2/
+2017-03-09 10:27:47,923  INFO HttpClientDownloader:87 - downloading page http://xinchengshengshi.fang.com/
+2017-03-09 10:27:48,152  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/newhouse/
+2017-03-09 10:27:50,308  INFO HttpClientDownloader:87 - downloading page http://hengdadijing021.fang.com/
+2017-03-09 10:27:55,381  WARN HttpClientDownloader:104 - download page http://hengdadijing021.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:32:59,654  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:32:59,671  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:33:02,681 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+java.lang.IllegalArgumentException: Need AND/OR between two predicate! //strong[1]/text()
+	at us.codecraft.xsoup.xevaluator.XPathParser.consumePredicates(XPathParser.java:223)
+	at us.codecraft.xsoup.xevaluator.XPathParser.findElements(XPathParser.java:163)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:76)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.xevaluator.XPathParser.combinator(XPathParser.java:110)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:74)
+	at us.codecraft.xsoup.xevaluator.XPathParser.parse(XPathParser.java:408)
+	at us.codecraft.xsoup.Xsoup.compile(Xsoup.java:25)
+	at us.codecraft.webmagic.selector.XpathSelector.<init>(XpathSelector.java:21)
+	at us.codecraft.webmagic.selector.Selectors.xpath(Selectors.java:32)
+	at us.codecraft.webmagic.selector.HtmlNode.xpath(HtmlNode.java:42)
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:38)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:33:26,086  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:33:26,103  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:33:30,682  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:33:30,684  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:33:33,927  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:33:34,453  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:33:36,569  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:33:36,881  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:33:39,025  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:33:39,248  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:33:41,402  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:33:42,395  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:33:44,472  WARN HttpClientDownloader:104 - download page http://beishangwan.fang.com/villa/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:33:45,133  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:33:45,511  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:33:47,508  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:33:48,045  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 10:33:49,953  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 10:33:50,414  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 10:33:52,420  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 10:33:52,784  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 10:33:54,820  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 10:33:55,851  WARN HttpClientDownloader:104 - download page http://douhuiyijingjd.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:33:56,856  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 10:33:57,728  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 10:33:59,215  INFO HttpClientDownloader:87 - downloading page http://shanghainianhuaxy.fang.com/
+2017-03-09 10:34:00,143  INFO HttpClientDownloader:87 - downloading page http://lanmeijuntingtr.fang.com/
+2017-03-09 10:34:01,617  INFO HttpClientDownloader:87 - downloading page http://xinshijiekd.fang.com/
+2017-03-09 10:34:02,511  INFO HttpClientDownloader:87 - downloading page http://283788.fang.com/
+2017-03-09 10:34:03,954  INFO HttpClientDownloader:87 - downloading page http://xingfuliyc.fang.com/
+2017-03-09 10:34:04,819  INFO HttpClientDownloader:87 - downloading page http://xinyijiating.fang.com/
+2017-03-09 10:34:06,542  INFO HttpClientDownloader:87 - downloading page http://aimechengshi.fang.com/
+2017-03-09 10:34:07,316  INFO HttpClientDownloader:87 - downloading page http://jimujimujd.fang.com/
+2017-03-09 10:34:08,816  INFO HttpClientDownloader:87 - downloading page http://nanjingxilugongguan.fang.com/
+2017-03-09 10:34:09,695  INFO HttpClientDownloader:87 - downloading page http://tiandiyunshujd.fang.com/
+2017-03-09 10:34:11,134  INFO HttpClientDownloader:87 - downloading page http://fuxinglongyu.fang.com/
+2017-03-09 10:34:12,852  WARN HttpClientDownloader:104 - download page http://tiandiyunshujd.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:34:13,462  INFO HttpClientDownloader:87 - downloading page http://shanghaipailj.fang.com/2/
+2017-03-09 10:34:13,856  INFO HttpClientDownloader:87 - downloading page http://xinchengshengshi.fang.com/
+2017-03-09 10:34:15,803  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/newhouse/
+2017-03-09 10:34:16,208  INFO HttpClientDownloader:87 - downloading page http://hengdadijing021.fang.com/
+2017-03-09 10:34:19,290  WARN HttpClientDownloader:104 - download page http://hengdadijing021.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:35:45,561  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:35:45,596  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:35:49,966  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:35:49,967  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:35:52,470  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:35:52,560  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:35:54,948  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:35:55,065  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:35:57,446  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:35:57,526  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:35:59,816  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:35:59,926  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:36:02,462  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:36:02,886  WARN HttpClientDownloader:104 - download page http://beishangwan.fang.com/villa/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:36:03,895  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:36:04,788  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:36:06,283  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 10:36:07,349  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 10:36:08,687  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 10:36:09,805  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 10:36:11,597  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 10:36:12,209  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 10:36:14,541  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 10:36:14,836  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 10:36:16,848  INFO HttpClientDownloader:87 - downloading page http://shanghainianhuaxy.fang.com/
+2017-03-09 10:36:17,337  INFO HttpClientDownloader:87 - downloading page http://lanmeijuntingtr.fang.com/
+2017-03-09 10:36:19,205  INFO HttpClientDownloader:87 - downloading page http://xinshijiekd.fang.com/
+2017-03-09 10:36:19,658  INFO HttpClientDownloader:87 - downloading page http://283788.fang.com/
+2017-03-09 10:36:21,887  INFO HttpClientDownloader:87 - downloading page http://xingfuliyc.fang.com/
+2017-03-09 10:36:21,973  INFO HttpClientDownloader:87 - downloading page http://xinyijiating.fang.com/
+2017-03-09 10:36:24,845  INFO HttpClientDownloader:87 - downloading page http://aimechengshi.fang.com/
+2017-03-09 10:36:25,221  INFO HttpClientDownloader:87 - downloading page http://jimujimujd.fang.com/
+2017-03-09 10:36:27,195  INFO HttpClientDownloader:87 - downloading page http://nanjingxilugongguan.fang.com/
+2017-03-09 10:36:29,521  INFO HttpClientDownloader:87 - downloading page http://tiandiyunshujd.fang.com/
+2017-03-09 10:36:30,407  INFO HttpClientDownloader:87 - downloading page http://fuxinglongyu.fang.com/
+2017-03-09 10:36:31,940  INFO HttpClientDownloader:87 - downloading page http://shanghaipailj.fang.com/2/
+2017-03-09 10:48:14,280  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:48:14,312  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:48:19,776  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:48:19,781  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:48:22,495  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:48:22,598  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:48:25,620  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:48:25,620  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:48:28,133  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:48:28,215  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:48:30,627  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:48:33,182  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:48:33,385  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:48:35,985  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:48:36,158  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:48:39,139  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 10:48:43,247  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 10:48:43,625  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 10:48:45,945  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 10:48:46,316  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 10:48:48,309  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 10:48:50,961  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 10:48:52,120  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 10:48:53,527  INFO HttpClientDownloader:87 - downloading page http://shanghainianhuaxy.fang.com/
+2017-03-09 10:48:54,546  INFO HttpClientDownloader:87 - downloading page http://lanmeijuntingtr.fang.com/
+2017-03-09 10:48:56,197  INFO HttpClientDownloader:87 - downloading page http://xinshijiekd.fang.com/
+2017-03-09 10:48:57,064  INFO HttpClientDownloader:87 - downloading page http://283788.fang.com/
+2017-03-09 10:48:58,974  INFO HttpClientDownloader:87 - downloading page http://xingfuliyc.fang.com/
+2017-03-09 10:48:59,552  INFO HttpClientDownloader:87 - downloading page http://xinyijiating.fang.com/
+2017-03-09 10:49:01,384  INFO HttpClientDownloader:87 - downloading page http://aimechengshi.fang.com/
+2017-03-09 10:49:01,915  INFO HttpClientDownloader:87 - downloading page http://jimujimujd.fang.com/
+2017-03-09 10:49:03,668  INFO HttpClientDownloader:87 - downloading page http://nanjingxilugongguan.fang.com/
+2017-03-09 10:49:04,264  INFO HttpClientDownloader:87 - downloading page http://tiandiyunshujd.fang.com/
+2017-03-09 10:56:28,621  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:56:28,664  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:56:33,599  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:56:33,599  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:56:36,177  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:56:36,218  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:56:43,817  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:56:44,379  WARN HttpClientDownloader:104 - download page http://189358.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:56:45,525  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:56:46,247  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:56:48,611  WARN HttpClientDownloader:104 - download page http://zhongjuntianyue.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:56:48,639  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:56:49,615  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:56:51,344  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:56:52,053  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:56:54,204  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:56:54,746  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:57:47,930  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:57:47,955  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:57:52,590  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:57:52,592  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:57:55,235  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:57:55,267  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 10:57:57,973  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 10:57:58,077  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 10:58:00,450  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 10:58:01,123  WARN HttpClientDownloader:104 - download page http://zhongjuntianyue.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:58:02,137  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 10:58:02,860  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 10:58:04,813  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 10:58:05,484  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 10:58:07,901  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 10:58:07,946  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 10:58:10,392  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 10:58:10,494  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 10:58:12,935  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 10:58:13,466  WARN HttpClientDownloader:104 - download page http://shanghailijingdc.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:58:14,468  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 10:58:15,277  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 10:58:16,966  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 10:58:19,001  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 10:58:19,297  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 10:59:05,480  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 10:59:05,531  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 10:59:11,093  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 10:59:11,096  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 10:59:13,561  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 10:59:14,203  WARN HttpClientDownloader:104 - download page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 10:59:24,346  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 11:07:11,028  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 11:07:11,061  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 11:07:15,533  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 11:07:15,533  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 11:07:18,101  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 11:07:18,105  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 11:07:21,946  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 11:07:22,091  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 11:07:25,884  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 11:07:28,107  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 11:07:32,052  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 11:07:33,908  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 11:07:37,812  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 11:07:39,646  INFO HttpClientDownloader:87 - downloading page http://yushoufuzr.fang.com/
+2017-03-09 11:07:44,241  INFO HttpClientDownloader:87 - downloading page http://wenxihuating.fang.com/
+2017-03-09 11:07:47,893  INFO HttpClientDownloader:87 - downloading page http://shanghailijingdc.fang.com/
+2017-03-09 11:07:47,961  INFO HttpClientDownloader:87 - downloading page http://dongshiqutj.fang.com/
+2017-03-09 11:07:52,296  INFO HttpClientDownloader:87 - downloading page http://binjiang18jlc.fang.com/
+2017-03-09 11:07:54,567  WARN HttpClientDownloader:104 - download page http://dongshiqutj.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 11:07:54,680  INFO HttpClientDownloader:87 - downloading page http://gongyuanshijirh.fang.com/
+2017-03-09 11:07:55,581  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/
+2017-03-09 11:07:57,094  INFO HttpClientDownloader:87 - downloading page http://yueshanjinglixcsk.fang.com/
+2017-03-09 11:07:59,106  INFO HttpClientDownloader:87 - downloading page http://yihaoyuanljz.fang.com/
+2017-03-09 11:08:02,799  INFO HttpClientDownloader:87 - downloading page http://unicitytiankongzhichengwk.fang.com/
+2017-03-09 11:08:03,661  INFO HttpClientDownloader:87 - downloading page http://shanghainianhuaxy.fang.com/
+2017-03-09 11:08:07,911  INFO HttpClientDownloader:87 - downloading page http://lanmeijuntingtr.fang.com/
+2017-03-09 11:08:08,059  INFO HttpClientDownloader:87 - downloading page http://xinshijiekd.fang.com/
+2017-03-09 11:08:12,099  INFO HttpClientDownloader:87 - downloading page http://283788.fang.com/
+2017-03-09 11:08:15,397  INFO HttpClientDownloader:87 - downloading page http://xingfuliyc.fang.com/
+2017-03-09 11:08:16,745  INFO HttpClientDownloader:87 - downloading page http://xinyijiating.fang.com/
+2017-03-09 11:08:17,725  INFO HttpClientDownloader:87 - downloading page http://aimechengshi.fang.com/
+2017-03-09 11:08:21,113  INFO HttpClientDownloader:87 - downloading page http://jimujimujd.fang.com/
+2017-03-09 11:08:21,913  INFO HttpClientDownloader:87 - downloading page http://nanjingxilugongguan.fang.com/
+2017-03-09 11:08:28,469  INFO HttpClientDownloader:87 - downloading page http://tiandiyunshujd.fang.com/
+2017-03-09 11:08:28,501  INFO HttpClientDownloader:87 - downloading page http://fuxinglongyu.fang.com/
+2017-03-09 11:08:30,840  INFO HttpClientDownloader:87 - downloading page http://shanghaipailj.fang.com/2/
+2017-03-09 11:08:31,565  WARN HttpClientDownloader:104 - download page http://tiandiyunshujd.fang.com/ error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 11:08:32,570  INFO HttpClientDownloader:87 - downloading page http://xinchengshengshi.fang.com/
+2017-03-09 11:08:34,956  INFO HttpClientDownloader:87 - downloading page http://douhuiyijingjd.fang.com/newhouse/
+2017-03-09 11:08:37,252  INFO HttpClientDownloader:87 - downloading page http://hengdadijing021.fang.com/
+2017-03-09 11:39:29,877  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 11:39:29,963  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 11:39:35,116  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/dianshang/
+2017-03-09 11:39:35,119  INFO HttpClientDownloader:87 - downloading page http://yueshanmingyuexcsk.fang.com/?from=xflist_xfgg
+2017-03-09 11:44:02,765  INFO HttpClientDownloader:87 - downloading page http://189358.fang.com/
+2017-03-09 11:50:00,385  INFO HttpClientDownloader:87 - downloading page http://junhuishangpinjzy021.fang.com/
+2017-03-09 11:50:12,996  INFO HttpClientDownloader:87 - downloading page http://wanhesijiyy021.fang.com/
+2017-03-09 11:50:21,382  INFO HttpClientDownloader:87 - downloading page http://zhongjuntianyue.fang.com/
+2017-03-09 11:50:27,423  INFO HttpClientDownloader:87 - downloading page http://xiangyitiandirc.fang.com/
+2017-03-09 11:50:54,132  INFO HttpClientDownloader:87 - downloading page http://hongqiao1hao.fang.com/
+2017-03-09 11:52:58,525  INFO HttpClientDownloader:87 - downloading page http://beishangwan.fang.com/villa/
+2017-03-09 11:53:00,758  INFO HttpClientDownloader:87 - downloading page http://zhengrongguoling.fang.com/
+2017-03-09 11:53:12,127  INFO HttpClientDownloader:87 - downloading page http://tianyuesheshangm.fang.com/
+2017-03-09 11:55:30,660  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 11:55:30,675  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 11:58:16,204  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 11:58:16,233  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:01:39,831  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:01:39,849  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:10:04,814  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:10:04,880  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:12:55,245  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:12:55,280  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:12:59,009  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 12:13:09,036  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:13:09,065  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:13:22,735 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+java.lang.ClassCastException: us.codecraft.webmagic.selector.HtmlNode cannot be cast to java.util.List
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:41)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 12:14:40,022  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:14:40,061  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:15:01,130 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+java.lang.ClassCastException: us.codecraft.webmagic.selector.HtmlNode cannot be cast to org.htmlcleaner.HtmlNode
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:41)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 12:15:43,128  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:15:43,147  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:24:09,098  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:24:09,131  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:58:59,065  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 12:58:59,122  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 12:59:26,142 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:50)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 13:00:42,769  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 13:00:42,803  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 13:04:08,464 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:50)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 13:04:23,360  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 13:04:23,377  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 15:54:27,924  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 15:54:27,981  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 15:54:52,971  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 15:54:52,989  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 15:55:28,872  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 15:55:28,921  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 15:58:27,840  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 15:58:27,874  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:01:43,888  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:01:44,283  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:01:44,456  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4afcd809, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@175c2241, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5bf0d49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b7a5baa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@776aec5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d296da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c7a06ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75d4a5c2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@557caf28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@408d971b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c6cb480]
+2017-03-09 17:01:50,464  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 4060 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:01:50,466  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:01:51,205  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d: startup date [Thu Mar 09 17:01:51 CST 2017]; root of context hierarchy
+2017-03-09 17:01:56,270  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:02:03,510  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:02:05,891  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:02:06,294  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:02:06,827  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:02:06,832  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:02:06,836  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:02:07,050  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:02:07,571  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:02:09,618  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:02:12,482  INFO FangPipelineTest:57 - Started FangPipelineTest in 27.118 seconds (JVM running for 33.006)
+2017-03-09 17:02:13,613  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:02:13,617  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:02:37,598  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d: startup date [Thu Mar 09 17:01:51 CST 2017]; root of context hierarchy
+2017-03-09 17:02:37,613  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:02:37,616  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:02:37,633  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:08:17,748  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:08:18,158  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:08:18,261  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:08:21,165  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 4284 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:08:21,166  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:08:21,559  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:08:21 CST 2017]; root of context hierarchy
+2017-03-09 17:08:28,911  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:08:37,382  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:08:38,920  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:08:39,010  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:08:39,440  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:08:39,444  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:08:39,448  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:08:39,622  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:08:39,935  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:08:42,724  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:08:45,193  INFO FangPipelineTest:57 - Started FangPipelineTest in 26.259 seconds (JVM running for 30.664)
+2017-03-09 17:08:46,330  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:08:46,334  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:08:46,338  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:08:48,447 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s/b92', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:57)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 17:08:51,271  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:08:21 CST 2017]; root of context hierarchy
+2017-03-09 17:08:51,280  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:08:51,286  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:08:51,303  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:11:19,777  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:11:20,010  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:11:20,211  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4afcd809, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@175c2241, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5bf0d49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b7a5baa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@776aec5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d296da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c7a06ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75d4a5c2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@557caf28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@408d971b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c6cb480]
+2017-03-09 17:11:23,983  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 4395 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:11:23,993  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:11:24,749  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:11:24 CST 2017]; root of context hierarchy
+2017-03-09 17:11:27,543  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:11:32,636  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:11:33,683  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:11:33,746  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:11:33,988  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:11:33,993  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:11:33,997  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:11:34,142  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:11:34,471  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:11:38,951  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:11:41,034  INFO FangPipelineTest:57 - Started FangPipelineTest in 20.081 seconds (JVM running for 23.661)
+2017-03-09 17:11:41,639  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:11:41,654  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:11:41,666  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:11:44,053 ERROR Spider:326 - process request Request{url='http://newhouse.sh.fang.com/house/s/b92', method='null', extras={statusCode=200}, priority=0} error
+java.lang.NullPointerException
+	at com.wula.housedata.service.processor.FangPageProcessor.process(FangPageProcessor.java:57)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:421)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 17:12:09,789  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:11:24 CST 2017]; root of context hierarchy
+2017-03-09 17:12:09,801  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:12:09,810  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:12:09,834  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:16:59,126  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:16:59,300  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:16:59,571  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4afcd809, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@175c2241, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5bf0d49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b7a5baa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@776aec5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d296da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c7a06ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75d4a5c2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@557caf28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@408d971b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c6cb480]
+2017-03-09 17:17:02,788  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 4773 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:17:02,789  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:17:03,426  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:17:03 CST 2017]; root of context hierarchy
+2017-03-09 17:17:06,287  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:17:11,969  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:17:13,069  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:17:13,253  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:17:13,715  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:17:13,731  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:17:13,739  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:17:13,973  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:17:14,572  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:17:18,715  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:17:21,102  INFO FangPipelineTest:57 - Started FangPipelineTest in 20.96 seconds (JVM running for 24.076)
+2017-03-09 17:17:22,982  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:17:22,993  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:17:23,001  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:18:09,908  WARN HikariPool:620 - 56s965ms511μs591ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
+2017-03-09 17:18:24,864  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:17:03 CST 2017]; root of context hierarchy
+2017-03-09 17:18:24,876  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:18:24,880  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:18:24,911  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:20:57,878  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:20:58,223  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:20:58,375  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:21:01,163  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 4931 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:21:01,169  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:21:01,564  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:21:01 CST 2017]; root of context hierarchy
+2017-03-09 17:21:04,039  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:21:07,881  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:21:08,650  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:21:08,687  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:21:08,898  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:21:08,902  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:21:08,906  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:21:09,041  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:21:09,300  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:21:10,676  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:21:12,034  INFO FangPipelineTest:57 - Started FangPipelineTest in 13.077 seconds (JVM running for 16.725)
+2017-03-09 17:21:12,354  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:21:12,357  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:21:12,363  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:21:15,660  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b92 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 17:21:17,399  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:21:01 CST 2017]; root of context hierarchy
+2017-03-09 17:21:17,414  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:21:17,427  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:21:17,449  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:22:34,038  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:22:34,200  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:22:34,285  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:22:36,476  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5027 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:22:36,480  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:22:36,863  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:22:36 CST 2017]; root of context hierarchy
+2017-03-09 17:22:39,258  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:22:42,234  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:22:43,015  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:22:43,067  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:22:43,259  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:22:43,263  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:22:43,267  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:22:43,362  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:22:43,642  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:22:45,123  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:22:46,534  INFO FangPipelineTest:57 - Started FangPipelineTest in 11.748 seconds (JVM running for 14.273)
+2017-03-09 17:22:46,869  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:22:46,873  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:22:52,671  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:22:36 CST 2017]; root of context hierarchy
+2017-03-09 17:22:52,674  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:22:52,677  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:22:52,688  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:25:06,551  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:25:06,832  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:25:06,905  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:25:09,341  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5128 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:25:09,342  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:25:09,665  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:25:09 CST 2017]; root of context hierarchy
+2017-03-09 17:25:11,576  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:25:14,669  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:25:15,421  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:25:15,461  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:25:15,741  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:25:15,746  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:25:15,749  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:25:15,866  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:25:16,218  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:25:17,538  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:25:19,223  INFO FangPipelineTest:57 - Started FangPipelineTest in 11.827 seconds (JVM running for 14.506)
+2017-03-09 17:25:19,580  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:25:19,584  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:25:25,965  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:25:09 CST 2017]; root of context hierarchy
+2017-03-09 17:25:25,984  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:25:25,997  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:25:26,018  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:26:16,348  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:26:16,668  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:26:16,768  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:26:19,390  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5210 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:26:19,393  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:26:19,782  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:26:19 CST 2017]; root of context hierarchy
+2017-03-09 17:26:21,934  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:26:25,197  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:26:26,029  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:26:26,072  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:26:26,287  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:26:26,292  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:26:26,297  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:26:26,508  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:26:26,893  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:26:28,497  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:26:30,112  INFO FangPipelineTest:57 - Started FangPipelineTest in 12.834 seconds (JVM running for 15.634)
+2017-03-09 17:26:30,503  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:26:30,508  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:26:30,513  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:26:34,024  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b92 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 17:26:39,544  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:26:19 CST 2017]; root of context hierarchy
+2017-03-09 17:26:39,555  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:26:39,558  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:26:39,588  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:27:45,053  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:27:45,368  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:27:45,540  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4afcd809, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@175c2241, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@5bf0d49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b7a5baa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@776aec5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d296da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c7a06ec, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75d4a5c2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@557caf28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@408d971b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c6cb480]
+2017-03-09 17:27:48,636  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5318 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:27:48,638  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:27:48,931  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:27:48 CST 2017]; root of context hierarchy
+2017-03-09 17:27:50,828  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:27:54,690  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:27:55,483  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:27:55,552  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:27:55,838  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:27:55,844  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:27:55,848  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:27:56,030  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:27:56,489  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:27:58,171  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:28:00,147  INFO FangPipelineTest:57 - Started FangPipelineTest in 13.939 seconds (JVM running for 17.271)
+2017-03-09 17:28:00,582  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:28:00,592  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:28:00,598  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:28:57,475  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@691939c9: startup date [Thu Mar 09 17:27:48 CST 2017]; root of context hierarchy
+2017-03-09 17:28:57,485  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:28:57,495  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:28:57,518  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:30:31,330  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:30:31,786  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:30:32,038  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:30:35,271  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5429 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:30:35,278  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:30:35,727  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:30:35 CST 2017]; root of context hierarchy
+2017-03-09 17:30:38,056  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:30:42,160  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:30:43,010  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:30:43,060  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:30:43,252  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:30:43,257  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:30:43,260  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:30:43,362  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:30:43,689  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:30:45,108  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:30:46,823  INFO FangPipelineTest:57 - Started FangPipelineTest in 14.164 seconds (JVM running for 18.142)
+2017-03-09 17:30:47,171  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:30:47,174  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:30:51,711  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:30:55,045  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:30:35 CST 2017]; root of context hierarchy
+2017-03-09 17:30:55,054  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:30:55,059  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:30:55,077  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 17:44:19,589  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.FangPipelineTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 17:44:19,833  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 17:44:19,881  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@458c1321, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11438d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34cd072c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a1ebcd8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5faeada1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@528931cf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ea1a8d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1563da5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf4b8b]
+2017-03-09 17:44:22,042  INFO FangPipelineTest:48 - Starting FangPipelineTest on lishaohua with PID 5852 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 17:44:22,043  INFO FangPipelineTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 17:44:22,302  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:44:22 CST 2017]; root of context hierarchy
+2017-03-09 17:44:25,428  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 17:44:28,931  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 17:44:29,720  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:44:29,757  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 17:44:30,010  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 17:44:30,015  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 17:44:30,019  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 17:44:30,133  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 17:44:30,501  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 17:44:31,867  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:44:33,490  INFO FangPipelineTest:57 - Started FangPipelineTest in 13.125 seconds (JVM running for 15.708)
+2017-03-09 17:44:33,830  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 17:44:33,834  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s
+2017-03-09 17:44:35,736  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 17:44:38,477  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 17:44:41,525  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b92 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 17:44:42,564  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26275bef: startup date [Thu Mar 09 17:44:22 CST 2017]; root of context hierarchy
+2017-03-09 17:44:42,588  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 17:44:42,594  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 17:44:42,610  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 20:11:45,464  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.CityConfigRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:11:45,745  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:11:45,836  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30a3107a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33c7e1bb, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@34c4973, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@52feb982, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a765367, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76b0bfab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d677df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3043fe0e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78e67e0a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@bd8db5a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f943d71]
+2017-03-09 20:12:12,693  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.CityConfigRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:12:12,934  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:12:13,011  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30a3107a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33c7e1bb, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@34c4973, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@52feb982, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a765367, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76b0bfab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d677df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3043fe0e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78e67e0a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@bd8db5a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f943d71]
+2017-03-09 20:12:15,447  INFO CityConfigRepositoryTest:48 - Starting CityConfigRepositoryTest on lishaohua with PID 9526 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:12:15,449  INFO CityConfigRepositoryTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:12:16,132  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Mar 09 20:12:16 CST 2017]; root of context hierarchy
+2017-03-09 20:12:19,329  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:12:25,329  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:12:26,756  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:12:26,874  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:12:27,123  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:12:27,127  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:12:27,131  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:12:27,290  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:12:27,831  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:12:29,388  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:12:31,382  INFO CityConfigRepositoryTest:57 - Started CityConfigRepositoryTest in 17.898 seconds (JVM running for 20.664)
+2017-03-09 20:12:31,866  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Mar 09 20:12:16 CST 2017]; root of context hierarchy
+2017-03-09 20:12:31,877  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:12:31,882  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 20:12:31,903  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 20:15:55,195  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.repository.CityConfigRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:15:55,501  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:15:55,583  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30a3107a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33c7e1bb, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@34c4973, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@52feb982, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a765367, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76b0bfab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d677df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3043fe0e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78e67e0a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@bd8db5a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f943d71]
+2017-03-09 20:15:58,032  INFO CityConfigRepositoryTest:48 - Starting CityConfigRepositoryTest on lishaohua with PID 9652 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:15:58,040  INFO CityConfigRepositoryTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:15:58,326  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Mar 09 20:15:58 CST 2017]; root of context hierarchy
+2017-03-09 20:16:00,253  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:16:03,111  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:16:03,935  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:16:03,991  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:16:04,205  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:16:04,210  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:16:04,214  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:16:04,324  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:16:04,579  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:16:05,905  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:16:07,690  INFO CityConfigRepositoryTest:57 - Started CityConfigRepositoryTest in 11.687 seconds (JVM running for 14.342)
+2017-03-09 20:16:07,961  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@10959ece: startup date [Thu Mar 09 20:15:58 CST 2017]; root of context hierarchy
+2017-03-09 20:16:07,975  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:16:07,981  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 20:16:08,006  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 20:22:52,817  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:22:53,078  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:22:53,177  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28701274, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@13c9d689, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@3754a4bf, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@62379589, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4afcd809, org.springframework.test.context.transaction.TransactionalTestExecutionListener@175c2241, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bf0d49, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5b7a5baa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@776aec5c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d296da, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7c7a06ec]
+2017-03-09 20:22:56,218  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 9991 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:22:56,219  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:22:56,658  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7203c7ff: startup date [Thu Mar 09 20:22:56 CST 2017]; root of context hierarchy
+2017-03-09 20:22:58,524  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:23:02,353  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:23:03,165  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:23:03,209  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:23:03,519  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:23:03,524  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:23:03,531  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:23:03,710  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:23:04,399  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:23:06,237  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:23:08,302  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 14.411 seconds (JVM running for 17.732)
+2017-03-09 20:24:10,554  WARN HikariPool:620 - 1m7s481ms671μs103ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
+2017-03-09 20:24:12,020  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 20:24:43,682  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7203c7ff: startup date [Thu Mar 09 20:22:56 CST 2017]; root of context hierarchy
+2017-03-09 20:24:43,706  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:24:43,714  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 20:24:43,760  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 20:31:48,866  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:31:49,201  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:31:49,399  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28701274, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@13c9d689, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@3754a4bf, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@62379589, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4afcd809, org.springframework.test.context.transaction.TransactionalTestExecutionListener@175c2241, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bf0d49, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b7a5baa, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@776aec5c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d296da, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c7a06ec]
+2017-03-09 20:31:53,200  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 10256 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:31:53,204  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:31:53,601  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7203c7ff: startup date [Thu Mar 09 20:31:53 CST 2017]; root of context hierarchy
+2017-03-09 20:31:55,716  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:31:59,476  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:32:01,575  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:32:01,637  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:32:02,024  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:32:02,032  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:32:02,040  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:32:02,264  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:32:05,148  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:32:08,380  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:32:11,235  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 20.864 seconds (JVM running for 24.526)
+2017-03-09 20:32:19,109  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 20:32:32,473  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 20:32:32,477  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b91
+2017-03-09 20:32:40,073  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 20:32:45,185  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b93
+2017-03-09 20:33:44,963  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:33:45,254  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:33:45,340  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57e1b0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4232c52b, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@1877ab81, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@305fd85d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@458c1321, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11438d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34cd072c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5faeada1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea1a8d5]
+2017-03-09 20:33:50,511  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 10370 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:33:50,512  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:33:51,305  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 20:33:51 CST 2017]; root of context hierarchy
+2017-03-09 20:34:00,552  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:34:12,006  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:34:13,410  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:34:13,609  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:34:14,093  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:34:14,110  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:34:14,115  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:34:14,363  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:34:14,906  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:34:16,911  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:34:19,546  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 33.737 seconds (JVM running for 41.005)
+2017-03-09 20:34:20,546  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 20:34:23,534  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 20:34:23,536  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b91
+2017-03-09 20:34:31,438  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 20:34:38,796  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b93
+2017-03-09 20:34:46,677  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 20:33:51 CST 2017]; root of context hierarchy
+2017-03-09 20:34:46,686  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:34:46,689  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 20:34:46,708  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 20:38:23,255  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 20:38:23,449  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 20:38:23,633  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57e1b0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4232c52b, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@1877ab81, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@305fd85d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@458c1321, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11438d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34cd072c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5faeada1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea1a8d5]
+2017-03-09 20:38:27,273  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 10523 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 20:38:27,275  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 20:38:27,752  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 20:38:27 CST 2017]; root of context hierarchy
+2017-03-09 20:38:32,375  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 20:38:39,150  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 20:38:40,218  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:38:40,457  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 20:38:40,841  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 20:38:40,847  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 20:38:40,853  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 20:38:41,656  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 20:38:42,194  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 20:38:45,792  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:38:48,228  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 23.855 seconds (JVM running for 31.864)
+2017-03-09 20:38:48,452  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 20:38:49,713  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 20:38:49,719  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b91
+2017-03-09 20:38:54,512  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b91 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 20:38:55,616  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 20:39:00,628  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b93
+2017-03-09 20:39:04,182  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 20:38:27 CST 2017]; root of context hierarchy
+2017-03-09 20:39:04,189  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 20:39:04,196  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 20:39:04,212  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 21:07:17,756  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 21:07:18,259  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 21:07:18,429  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57e1b0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4232c52b, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@1877ab81, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@305fd85d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@458c1321, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11438d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34cd072c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5faeada1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea1a8d5]
+2017-03-09 21:07:23,146  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 11318 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 21:07:23,147  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 21:07:24,623  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 21:07:24 CST 2017]; root of context hierarchy
+2017-03-09 21:07:34,125  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 21:07:42,188  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 21:07:44,470  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:07:44,619  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 21:07:45,031  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 21:07:45,039  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 21:07:45,043  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 21:07:45,213  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 21:07:45,934  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 21:07:48,058  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:07:51,073  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 31.905 seconds (JVM running for 38.772)
+2017-03-09 21:07:51,272  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 21:07:53,632  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 21:07:53,634  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b91
+2017-03-09 21:08:09,433  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 21:08:18,783  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b93
+2017-03-09 21:08:22,170  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b93 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 21:08:23,372  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 21:07:24 CST 2017]; root of context hierarchy
+2017-03-09 21:08:23,378  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:08:23,383  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 21:08:23,397  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 21:09:10,430  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.wula.housedata.service.impl.HouseDataGrabServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-03-09 21:09:10,629  INFO DefaultTestContextBootstrapper:260 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-03-09 21:09:10,801  INFO DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57e1b0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4232c52b, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@1877ab81, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@305fd85d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@458c1321, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11438d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34cd072c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a1ebcd8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5faeada1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@528931cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea1a8d5]
+2017-03-09 21:09:13,290  INFO HouseDataGrabServiceImplTest:48 - Starting HouseDataGrabServiceImplTest on lishaohua with PID 11409 (started by lishaohua in /home/lishaohua/works/housedata)
+2017-03-09 21:09:13,297  INFO HouseDataGrabServiceImplTest:659 - No active profile set, falling back to default profiles: default
+2017-03-09 21:09:13,706  INFO AnnotationConfigApplicationContext:581 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 21:09:13 CST 2017]; root of context hierarchy
+2017-03-09 21:09:17,993  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-09 21:09:22,193  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-09 21:09:23,560  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:09:23,674  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-09 21:09:23,959  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-09 21:09:23,964  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-09 21:09:23,968  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-09 21:09:24,150  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-09 21:09:24,562  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-09 21:09:27,513  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:09:29,397  INFO HouseDataGrabServiceImplTest:57 - Started HouseDataGrabServiceImplTest in 18.123 seconds (JVM running for 24.99)
+2017-03-09 21:09:29,985  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-09 21:09:33,144  INFO Spider:307 - Spider newhouse.sh.fang.com started!
+2017-03-09 21:09:33,148  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b91
+2017-03-09 21:09:43,579  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b92
+2017-03-09 21:09:47,183  WARN HttpClientDownloader:104 - download page http://newhouse.sh.fang.com/house/s/b92 error
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:92)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:409)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-09 21:09:48,198  INFO HttpClientDownloader:87 - downloading page http://newhouse.sh.fang.com/house/s/b93
+2017-03-09 21:09:53,789  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Thu Mar 09 21:09:13 CST 2017]; root of context hierarchy
+2017-03-09 21:09:53,797  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 21:09:53,808  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 21:09:53,827  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-09 21:07:14,215  WARN HikariPool:620 - 34m43s470ms536μs989ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
+2017-03-09 22:12:21,930  INFO AnnotationConfigApplicationContext:982 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7203c7ff: startup date [Thu Mar 09 20:31:53 CST 2017]; root of context hierarchy
+2017-03-09 22:12:28,713  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-09 22:12:35,411  INFO HikariPool:202 - HikariPool-1 - Close initiated...
+2017-03-09 22:12:36,392  INFO HikariPool:242 - HikariPool-1 - Closed.
