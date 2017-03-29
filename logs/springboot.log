@@ -1,6 +1,46 @@
-2017-03-25 11:18:02,856  INFO AnnotationConfigEmbeddedWebApplicationContext:982 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b14c583: startup date [Wed Mar 22 23:17:57 CST 2017]; root of context hierarchy
-2017-03-25 11:18:02,859  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
-2017-03-25 11:18:02,860  INFO AnnotationMBeanExporter:241 - Unregistering JMX-exposed beans
-2017-03-25 11:18:02,875  INFO LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2017-03-25 11:18:02,887  INFO HikariPool:202 - HikariPool-1 - Close initiated...
-2017-03-25 11:18:02,967  INFO HikariPool:242 - HikariPool-1 - Closed.
+2017-03-29 21:25:17,234  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-29 21:25:21,746  INFO ApplicationConfig:48 - Starting ApplicationConfig on lishaohuadeMacBook-Pro.local with PID 15171 (/Users/lishaohua/IdeaProjects/housedata/target/classes started by lishaohua in /Users/lishaohua/IdeaProjects/housedata)
+2017-03-29 21:25:21,746  INFO ApplicationConfig:659 - No active profile set, falling back to default profiles: default
+2017-03-29 21:25:21,828  INFO AnnotationConfigEmbeddedWebApplicationContext:581 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ee37e5a: startup date [Wed Mar 29 21:25:21 CST 2017]; root of context hierarchy
+2017-03-29 21:25:23,274  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2d99a1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 21:25:23,779  INFO TomcatEmbeddedServletContainer:88 - Tomcat initialized with port(s): 8080 (http)
+2017-03-29 21:25:24,241  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2423 ms
+2017-03-29 21:25:24,408  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 21:25:24,415  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 21:25:24,415  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 21:25:24,415  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 21:25:24,416  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 21:25:24,604  INFO HikariDataSource:93 - HikariPool-1 - Started.
+2017-03-29 21:25:25,021  INFO LocalContainerEntityManagerFactoryBean:334 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 21:25:25,036  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 21:25:25,140  INFO Version:37 - HHH000412: Hibernate Core {5.0.9.Final}
+2017-03-29 21:25:25,143  INFO Environment:213 - HHH000206: hibernate.properties not found
+2017-03-29 21:25:25,145  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-29 21:25:25,211  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 21:25:25,396  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-29 21:25:26,015  INFO LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 21:25:26,670  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ee37e5a: startup date [Wed Mar 29 21:25:21 CST 2017]; root of context hierarchy
+2017-03-29 21:25:26,752  INFO RequestMappingHandlerMapping:543 - Mapped "{[/home/index]}" onto public org.springframework.web.servlet.ModelAndView com.wula.housedata.web.controller.HomeController.index(java.lang.String)
+2017-03-29 21:25:26,753  INFO RequestMappingHandlerMapping:543 - Mapped "{[/home/]}" onto public java.lang.String com.wula.housedata.web.controller.HomeController.home()
+2017-03-29 21:25:26,754  INFO RequestMappingHandlerMapping:543 - Mapped "{[/home/getCityConfig]}" onto public com.wula.housedata.web.vo.TablePage<com.wula.housedata.web.vo.CityVo> com.wula.housedata.web.controller.HomeController.cityConfig(java.lang.String,com.wula.housedata.web.vo.TablePageable)
+2017-03-29 21:25:26,754  INFO RequestMappingHandlerMapping:543 - Mapped "{[/home/about]}" onto public java.lang.String com.wula.housedata.web.controller.HomeController.about()
+2017-03-29 21:25:26,754  INFO RequestMappingHandlerMapping:543 - Mapped "{[/home/loginPage]}" onto public java.lang.String com.wula.housedata.web.controller.HomeController.loginPage()
+2017-03-29 21:25:26,755  INFO RequestMappingHandlerMapping:543 - Mapped "{[/houseData/startGrabTask]}" onto public java.lang.String com.wula.housedata.web.controller.HouseDataController.startGrabTask(java.lang.Long[])
+2017-03-29 21:25:26,756  INFO RequestMappingHandlerMapping:543 - Mapped "{[/houseData/review]}" onto public org.springframework.web.servlet.ModelAndView com.wula.housedata.web.controller.HouseDataController.reviewHouseData(org.springframework.data.domain.Pageable)
+2017-03-29 21:25:26,756  INFO RequestMappingHandlerMapping:543 - Mapped "{[/houseData/getHouseInfo]}" onto public com.wula.housedata.web.vo.TablePage<com.wula.housedata.web.vo.HouseInfoVo> com.wula.housedata.web.controller.HouseDataController.getHouseData(com.wula.housedata.web.controller.DataViewQuery,com.wula.housedata.web.vo.TablePageable)
+2017-03-29 21:25:26,756  INFO RequestMappingHandlerMapping:543 - Mapped "{[/houseData/exportExcel]}" onto public void com.wula.housedata.web.controller.HouseDataController.exportHouseDataToExcel(javax.servlet.http.HttpServletResponse,com.wula.housedata.web.controller.DataViewQuery) throws java.io.IOException
+2017-03-29 21:25:26,758  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 21:25:26,758  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 21:25:26,797  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 21:25:26,797  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 21:25:26,842  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 21:25:27,217  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-29 21:25:27,219  INFO AnnotationMBeanExporter:912 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-03-29 21:25:27,224  INFO AnnotationMBeanExporter:667 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-03-29 21:25:27,295  INFO TomcatEmbeddedServletContainer:186 - Tomcat started on port(s): 8080 (http)
+2017-03-29 21:25:27,300  INFO ApplicationConfig:57 - Started ApplicationConfig in 16.102 seconds (JVM running for 17.34)
+2017-03-29 21:34:56,281  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-29 21:34:56,301  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-03-29 21:35:09,132  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
