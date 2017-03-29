@@ -91,12 +91,12 @@ public class FangPageProcessor implements PageProcessor {
         return site;
     }
 
-    public static void main(String[] args) {
-        Spider.create(new FangPageProcessor("上海", 1L, null, null))
-                .addPipeline(new ConsolePipeline())
-//                .addUrl("http://newhouse.sh.fang.com/house/s")
-                .addUrl("http://newhouse.ankang.fang.com/house/s/")
-                .thread(2)
-                .run();
-    }
+//    public static void main(String[] args) {
+//        Spider.create(new FangPageProcessor("上海", 1L, null, null))
+//                .addPipeline(new ConsolePipeline())
+////                .addUrl("http://newhouse.sh.fang.com/house/s")
+//                .addUrl("http://newhouse.ankang.fang.com/house/s/")
+//                .thread(2)
+//                .run();
+//    }
 }
