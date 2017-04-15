@@ -12,7 +12,7 @@ import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 public class HouseHtmlElementConverterImpl2 implements HouseHtmlElementConverter {
 
     @Override
-    public HouseInfo converte(Long cityId, String cityName, Selectable selectable) {
+    public HouseInfo convert(Long cityId, String cityName, Selectable selectable) {
         final String title = trimToEmpty(selectable.xpath("//ul[@class='sslainfor']//strong/a/text()").get());
         final String requestUrl = trimToEmpty(selectable.xpath("//ul[@class='sslainfor']//strong/a/@href").get());
         final String address = trimToEmpty(selectable.xpath("//ul[@class='sslainfor']//font/@title").get());

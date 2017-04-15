@@ -18,7 +18,7 @@ import java.util.List;
  * Created by lishaohua on 17-3-9.
  */
 @Component
-public class FantHouseDataJpaPipeline implements Pipeline {
+public class FangHouseDataJpaPipeline implements Pipeline {
     @Autowired
     private HouseDataRepository houseDataRepository;
 

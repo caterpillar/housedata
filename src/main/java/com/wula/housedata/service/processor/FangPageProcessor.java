@@ -2,15 +2,10 @@ package com.wula.housedata.service.processor;
 
 import com.wula.housedata.service.HouseInfo;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
-
-import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.pipeline.ConsolePipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.HtmlNode;
@@ -46,7 +41,8 @@ public class FangPageProcessor implements PageProcessor {
                 .setSleepTime(sleepTime)
                 .setTimeOut(20000)
                 .addHeader("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4")
-                .addHeader("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36");
+                .addHeader("User-Agent",
+                        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36");
     }
 
     @Override
@@ -69,7 +65,7 @@ public class FangPageProcessor implements PageProcessor {
             houseInfoList = new ArrayList<>(300);
         }
         for (Selectable selectable : houseHtmlNode.nodes()) {
-            houseInfoList.add(houseHtmlElementConverter.converte(cityId, cityName, selectable));
+            houseInfoList.add(houseHtmlElementConverter.convert(cityId, cityName, selectable));
         }
         page.putField(HOUSE_DATA_RESULT_NAME, houseInfoList);
         List<String> allTargetUrl = pageHtml.xpath("//div[@class='page']/ul/li/a/@href").all();

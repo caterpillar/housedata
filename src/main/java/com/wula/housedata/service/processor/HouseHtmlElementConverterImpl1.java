@@ -11,7 +11,7 @@ import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 public class HouseHtmlElementConverterImpl1 implements HouseHtmlElementConverter {
 
     @Override
-    public HouseInfo converte(Long cityId, String cityName, Selectable selectable) {
+    public HouseInfo convert(Long cityId, String cityName, Selectable selectable) {
         final String title = trimToEmpty(selectable.xpath("//div[@class='nlcd_name']/a/text()").get());
         final String requestUrl = trimToEmpty(selectable.xpath("//div[@class='nlcd_name']/a/@href").get());
         final String area = trimToEmpty(selectable.xpath("//div[@class='address']/a/span/text()").get()).replace("[", "").replace("]", "");
