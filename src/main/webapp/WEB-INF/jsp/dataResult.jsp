@@ -101,6 +101,7 @@
             <th data-field="cityName">城市</th>
             <th data-field="title">标题</th>
             <th data-field="area">区域</th>
+            <th data-field="section">商圈</th>
             <th data-field="address">地址</th>
             <th data-field="saleStatus">销售状态</th>
             <th data-field="originUrl">请求地址</th>

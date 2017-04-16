@@ -6,6 +6,9 @@ import us.codecraft.webmagic.selector.Selectable;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 /**
+ *
+ * 类似上海、苏州、武汉等知名城市的网页机构转换器
+ *
  * Created by lishaohua on 17-3-18.
  */
 public class HouseHtmlElementConverterImpl1 implements HouseHtmlElementConverter {

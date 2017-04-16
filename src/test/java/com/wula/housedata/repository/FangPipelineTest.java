@@ -1,6 +1,7 @@
 package com.wula.housedata.repository;
 
 import com.wula.housedata.ApplicationConfig;
+import com.wula.housedata.service.pipline.SimpleConsolePipline;
 import com.wula.housedata.service.processor.FangPageProcessor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,9 +24,10 @@ public class FangPipelineTest {
     @Test
     public void simpleSaveTest() {
         Spider.create(new FangPageProcessor("上海", 1L, null, null))
-                .addPipeline(pipeline)
+//                .addPipeline(pipeline)
+                .addPipeline(new SimpleConsolePipline())
                 .addUrl("http://newhouse.sh.fang.com/house/s")
-                .addUrl("http://newhouse.sh.fang.com/house/s/b92")
+//                .addUrl("http://newhouse.sh.fang.com/house/s/b92")
 //                .thread(2)
                 .run();
     }

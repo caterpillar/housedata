@@ -7,6 +7,8 @@ import us.codecraft.webmagic.selector.Selectable;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 /**
+ * 类似安阳、安庆等小城市网页结构转换器
+ *
  * Created by lishaohua on 17-3-18.
  */
 public class HouseHtmlElementConverterImpl2 implements HouseHtmlElementConverter {
