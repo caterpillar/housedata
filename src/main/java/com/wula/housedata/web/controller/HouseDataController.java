@@ -64,7 +64,7 @@ public class HouseDataController {
         for (HouseData houseData : houseDataPage.getContent()) {
             houseInfoVos.add(HouseInfoVo.buildInstance(houseData));
         }
-        Page<HouseInfoVo> houseInfoVoPage = new PageImpl<HouseInfoVo>(houseInfoVos, pageable, houseDataPage.getTotalElements());
+        final Page<HouseInfoVo> houseInfoVoPage = new PageImpl<HouseInfoVo>(houseInfoVos, pageable, houseDataPage.getTotalElements());
         return new ModelAndView("dataResult", new HashMap<String, Object>() {
             {
                 put("houseInfoPage", houseInfoVoPage);

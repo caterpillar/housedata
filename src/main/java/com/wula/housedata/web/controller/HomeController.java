@@ -44,7 +44,7 @@ public class HomeController {
         } else {
             allCity = cityConfigRepository.findByCityName(cityName);
         }
-        List<CityVo> cityList = new ArrayList<>();
+        final List<CityVo> cityList = new ArrayList<>();
         for (CityConfig ci : allCity) {
             cityList.add(new CityVo(ci));
         }
