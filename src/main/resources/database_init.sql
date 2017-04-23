@@ -21,7 +21,7 @@ CREATE TABLE `house_data` (
   `city_id` varchar(20) NOT NULL,
   `city_name` varchar(30) NOT NULL,
   `title` varchar(50) DEFAULT NULL,
-  `area` varchar(20) DEFAULT NULL,
+  `area` varchar(50) DEFAULT NULL,
   `section` varchar(20) DEFAULT NULL,
   `address` varchar(100) DEFAULT NULL,
   `sale_status` varchar(10) DEFAULT NULL,

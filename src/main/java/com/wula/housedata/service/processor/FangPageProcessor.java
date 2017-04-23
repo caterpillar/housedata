@@ -59,25 +59,54 @@ public class FangPageProcessor implements PageProcessor {
     public void process(Page page) {
         final Html pageHtml = page.getHtml();
         List<String> allAreaHref = pageHtml.xpath("//div[@class='choose main_1200 tf']//dd[@class='lp_area']/ul[@class='clearfix']/li[@class='quyu_name dingwei']/a/@href").all();
+        if (CollectionUtils.isEmpty(allAreaHref)) {
+            allAreaHref = pageHtml.xpath("//div[@class='choose main_1200 tf']//dd[@ctm-data='lpsearch_area']/ul[@class='clearfix']/li[@class='quyu_name dingwei']/a/@href").all();
+        }
+        if (CollectionUtils.isEmpty(allAreaHref)) {
+            allAreaHref = pageHtml.xpath("//div[@class='pagecontent']//div[@class='search_content']//ul[@id='sjina_B01_05']//div[@class='s3']/a/@href").all();
+        }
         page.addTargetRequests(allAreaHref);
         List<String> allQuyuHref = pageHtml.xpath("//div[@class='choose main_1200 tf']//div[@class='quyu']/ol/li/a/@href").all();
+        if (CollectionUtils.isEmpty(allQuyuHref)) {
+            allQuyuHref = pageHtml.xpath("//div[@class='pagecontent']//div[@class='search_content']//ul[@id='sjina_B01_05']//div[@class='s4']/a/@href").all();
+        }
         page.addTargetRequests(allQuyuHref);
 
-
-
-        HtmlNode houseHtmlNode = (HtmlNode) pageHtml
-                .xpath("//div[@class='nhouse_list']//div[@class='nl_con clearfix']/ul/li//div[@class='nlc_details']");
-        String section = null;
-        String area = null;
-        if (houseHtmlNode.nodes().size() != 0) {
-            area = trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//div[@class='clearfix curItem']/div[@class='fl']/a[@class='item'][1]/text()").get());
-            if(StringUtils.isEmpty(area)) {
-                page.setSkip(true);
+        String area =
+                trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//div[@class='clearfix curItem']/div[@class='fl']/a[@class='item'][1]/text()").get());
+        if (StringUtils.isEmpty(area)) {
+            area = trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//ul[@class='clearfix tiaojian']//a[@class='fl'][1]/text()").get());
+        }
+        List<String> selectArea = pageHtml.xpath("//div[@class='pagecontent']//div[@class='slectd_cditn']//div[@class='l2']/text()").all();
+        if(StringUtils.isEmpty(area)) {
+            if (CollectionUtils.isNotEmpty(selectArea)) {
+                area = selectArea.get(0);
             }
-            section =
-                    trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//div[@class='clearfix curItem']/div[@class='fl']/a[@class='item'][2]/text()").get());
+        }
+        if(StringUtils.isEmpty(area)) {
+            page.setSkip(true);
+            return;
+        }
 
-
+        String section =
+                trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//div[@class='clearfix curItem']/div[@class='fl']/a[@class='item'][2]/text()").get());
+        if (StringUtils.isEmpty(section)) {
+            List<String> sectionsAll = pageHtml.xpath("//div[@class='choose main_1200 tf']//ul[@class='clearfix tiaojian']//a[@class='fl'][1]/text()").all();
+            if (sectionsAll != null && sectionsAll.size() > 1) {
+                String tempSection = trimToEmpty(sectionsAll.get(1));
+                if (StringUtils.isNotEmpty(tempSection) && !"清空".equals(tempSection) && !"保存条件".equals(tempSection)) {
+                    section = trimToEmpty(sectionsAll.get(1));
+                }
+            }
+        }
+        if (StringUtils.isEmpty(section)) {
+            if (CollectionUtils.isNotEmpty(selectArea) && selectArea.size() > 1) {
+                section = selectArea.get(1);
+            }
+        }
+        HtmlNode houseHtmlNode = (HtmlNode) pageHtml
+                .xpath("//div[@class='nhouse_list']//div[@class='nl_con clearfix']/ul/li//div[@class='nlc_details']|div[@class='contentList']");
+        if (houseHtmlNode.nodes().size() != 0) {
             houseHtmlElementConverter = new HouseHtmlElementConverterImpl1();
         } else {
             houseHtmlNode = (HtmlNode) pageHtml
@@ -86,8 +115,6 @@ public class FangPageProcessor implements PageProcessor {
                 houseHtmlElementConverter = new HouseHtmlElementConverterImpl2();
             }
         }
-
-
 
         List<HouseInfo> houseInfoList = page.getResultItems().get(HOUSE_DATA_RESULT_NAME);
         if (houseInfoList == null) {

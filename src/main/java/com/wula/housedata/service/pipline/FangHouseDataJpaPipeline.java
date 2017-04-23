@@ -27,6 +27,7 @@ public class FangHouseDataJpaPipeline implements Pipeline {
     public void process(ResultItems resultItems, Task task) {
         List<HouseInfo> houseInfoList = resultItems.get(FangPageProcessor.HOUSE_DATA_RESULT_NAME);
         for (HouseInfo houseInfo : houseInfoList) {
+            System.out.println("==================" + houseInfo);
             final List<HouseData> byCityIdAndTitle = houseDataRepository.findByCityIdAndTitle(houseInfo.getCityId(), houseInfo.getTitle());
             if(CollectionUtils.isEmpty(byCityIdAndTitle)) {
                 houseDataRepository.save(new HouseData(houseInfo));
