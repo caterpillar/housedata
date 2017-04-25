@@ -44,7 +44,7 @@ public class HouseDataGrabServiceImpl implements HouseDataGrabService, Disposabl
     public void startGrabHouseData(Long[] cityData) throws InterruptedException {
         Validate.notEmpty(cityData, "抓取楼盘城市不能为空");
         final List<CityConfig> cityConfigs = cityConfigRepository.findAll(Arrays.asList(cityData));
-        for (CityConfig cityConfig : cityConfigs) {
+        for (final CityConfig cityConfig : cityConfigs) {
             if (cityConfig != null) {
                 cityConfig.waiting();
                 cityConfigRepository.save(cityConfig);
