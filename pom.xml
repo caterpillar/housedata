@@ -11,6 +11,7 @@
     <properties>
         <java.version>1.7</java.version>
         <querydsl.version>4.1.1</querydsl.version>
+        <tomcat.version>8.0.30</tomcat.version>
     </properties>
 
     <parent>
@@ -125,6 +126,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <!--配置jsp jstl的支持-->

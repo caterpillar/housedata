@@ -18,7 +18,6 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 /**
- *
  * Created by lishaohua on 17-3-9.
  */
 public class FangPageProcessor implements PageProcessor {
@@ -78,12 +77,12 @@ public class FangPageProcessor implements PageProcessor {
             area = trimToEmpty(pageHtml.xpath("//div[@class='choose main_1200 tf']//ul[@class='clearfix tiaojian']//a[@class='fl'][1]/text()").get());
         }
         List<String> selectArea = pageHtml.xpath("//div[@class='pagecontent']//div[@class='slectd_cditn']//div[@class='l2']/text()").all();
-        if(StringUtils.isEmpty(area)) {
+        if (StringUtils.isEmpty(area)) {
             if (CollectionUtils.isNotEmpty(selectArea)) {
                 area = selectArea.get(0);
             }
         }
-        if(StringUtils.isEmpty(area)) {
+        if (StringUtils.isEmpty(area)) {
             page.setSkip(true);
             return;
         }
@@ -122,21 +121,21 @@ public class FangPageProcessor implements PageProcessor {
         }
         for (Selectable selectable : houseHtmlNode.nodes()) {
             HouseInfo houseInfo = houseHtmlElementConverter.convert(cityId, cityName, selectable);
-            if(StringUtils.isNotEmpty(section)) {
+            if (StringUtils.isNotEmpty(section)) {
                 houseInfo.setSection(section);
             }
-            if(StringUtils.isEmpty(houseInfo.getArea())) {
+            if (StringUtils.isEmpty(houseInfo.getArea())) {
                 houseInfo.setArea(area);
             }
             houseInfoList.add(houseInfo);
         }
         page.putField(HOUSE_DATA_RESULT_NAME, houseInfoList);
         List<String> allTargetUrl = pageHtml.xpath("//div[@class='page']/ul/li/a/@href").all();
-        if(CollectionUtils.isNotEmpty(allTargetUrl)) {
+        if (CollectionUtils.isNotEmpty(allTargetUrl)) {
             page.addTargetRequests(allTargetUrl);
         } else {
             allTargetUrl = pageHtml.xpath("//div[@class='rankpage']/ul[@class='page']/li/a/@href").all();
-            if(CollectionUtils.isNotEmpty(allTargetUrl)) {
+            if (CollectionUtils.isNotEmpty(allTargetUrl)) {
                 page.addTargetRequests(allTargetUrl);
             }
         }
