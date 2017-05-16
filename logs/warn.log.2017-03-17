@@ -1,4 +1,0 @@
-2017-03-17 22:00:37,383  WARN HikariPool:620 - 48s410ms285μs739ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
-  WARN HikariPool:620 - 48s410ms285μs739ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
-2017-03-17 22:50:05,905  WARN HikariPool:620 - 4m19s199ms689μs547ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
-  WARN HikariPool:620 - 4m19s199ms689μs547ns - Thread starvation or clock leap detected (housekeeper delta=HikariPool-1).
