@@ -4,6 +4,13 @@ CREATE DATABASE house_data
     COLLATE utf8_general_ci
     DEFAULT COLLATE utf8_general_ci;
 
+
+create user 'house_user'@'%' identified by '123456';
+grant all privileges on `house_data`.* to 'house_user'@'%' identified by '123456';
+flush privileges;
+
+use house_data;
+
 # 城市配置表
 CREATE TABLE `city_config` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
