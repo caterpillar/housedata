@@ -44,7 +44,7 @@ public class HomeController {
         } else {
             allCity = cityConfigRepository.findByCityName(cityName);
         }
-        final List<CityVo> cityList = new ArrayList<>();
+        final List<CityVo> cityList = new ArrayList<CityVo>();
         for (CityConfig ci : allCity) {
             cityList.add(new CityVo(ci));
         }
@@ -65,7 +65,7 @@ public class HomeController {
             predicate = predicate.and($.cityName.like("%" + cityName + "%"));
         }
         Page<CityConfig> houseDataPage = cityConfigRepository.findAll(predicate, pageable1);
-        List<CityVo> cityList = new ArrayList<>(houseDataPage.getSize());
+        List<CityVo> cityList = new ArrayList<CityVo>(houseDataPage.getSize());
         for (CityConfig city : houseDataPage.getContent()) {
             cityList.add(new CityVo(city));
         }

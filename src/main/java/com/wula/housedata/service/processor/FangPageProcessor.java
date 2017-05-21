@@ -117,7 +117,7 @@ public class FangPageProcessor implements PageProcessor {
 
         List<HouseInfo> houseInfoList = page.getResultItems().get(HOUSE_DATA_RESULT_NAME);
         if (houseInfoList == null) {
-            houseInfoList = new ArrayList<>(300);
+            houseInfoList = new ArrayList<HouseInfo>(300);
         }
         for (Selectable selectable : houseHtmlNode.nodes()) {
             HouseInfo houseInfo = houseHtmlElementConverter.convert(cityId, cityName, selectable);

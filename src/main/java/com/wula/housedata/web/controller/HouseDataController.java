@@ -60,7 +60,7 @@ public class HouseDataController {
     public ModelAndView reviewHouseData(Pageable pageable) {
         final Page<HouseData> houseDataPage = houseDataRepository.findAll(pageable);
 
-        List<HouseInfoVo> houseInfoVos = new ArrayList<>(houseDataPage.getSize());
+        List<HouseInfoVo> houseInfoVos = new ArrayList<HouseInfoVo>(houseDataPage.getSize());
         for (HouseData houseData : houseDataPage.getContent()) {
             houseInfoVos.add(HouseInfoVo.buildInstance(houseData));
         }
@@ -79,7 +79,7 @@ public class HouseDataController {
         Pageable pageable1 = new PageRequest(page, pageable.getLimit());
         BooleanExpression predicate = createQueryPredicate(dataViewQuery);
         Page<HouseData> houseDataPage = houseDataRepository.findAll(predicate, pageable1);
-        List<HouseInfoVo> houseInfoVos = new ArrayList<>(houseDataPage.getSize());
+        List<HouseInfoVo> houseInfoVos = new ArrayList<HouseInfoVo>(houseDataPage.getSize());
         for (HouseData houseData : houseDataPage.getContent()) {
             houseInfoVos.add(HouseInfoVo.buildInstance(houseData));
         }
@@ -127,9 +127,15 @@ public class HouseDataController {
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         setResponseHeader(response, simpleDateFormat.format(new Date()) + "新房导出数据.xlsx");
-        try (OutputStream os = response.getOutputStream()) {
+        OutputStream os = null;
+        try {
+            os = response.getOutputStream();
             wb.write(os);
             os.flush();
+        } finally {
+            if (os != null) {
+                os.close();
+            }
         }
     }
 

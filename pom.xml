@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.6</java.version>
         <querydsl.version>4.1.1</querydsl.version>
         <tomcat.version>8.0.30</tomcat.version>
     </properties>
