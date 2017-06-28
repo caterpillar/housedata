@@ -23,7 +23,7 @@ public class CityConfig {
     private Integer defaultPage;
     /**0:停止;1:运行中;2:等待执行*/
     @Column(name = "running_status")
-    private int runningStatus;
+    private Integer runningStatus;
 
     public String[] getGrabUrls(Integer defaultPage) {
         final String requestUrl = this.getRequestUrl();
@@ -40,7 +40,7 @@ public class CityConfig {
     }
 
     public boolean isRunning() {
-        return runningStatus == 1;
+        return (runningStatus != null && runningStatus.intValue() == 1);
     }
 
     public boolean isWaiting() {
@@ -48,7 +48,7 @@ public class CityConfig {
     }
 
     public boolean isStop() {
-        return runningStatus == 0;
+        return (runningStatus == null || runningStatus.intValue() == 0);
     }
 
     public void startRunning() {
