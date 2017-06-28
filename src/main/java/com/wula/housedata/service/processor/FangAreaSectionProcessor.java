@@ -30,6 +30,7 @@ public class FangAreaSectionProcessor implements PageProcessor {
         this.site = Site.me()
                 .setRetryTimes(retryTimes)
                 .setSleepTime(sleepTime)
+                .setCharset("GBK")
                 .setTimeOut(20000)
                 .addHeader("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4")
                 .addHeader("User-Agent",

@@ -42,6 +42,7 @@ public class FangPageProcessor implements PageProcessor {
         this.site = Site.me()
                 .setRetryTimes(retryTimes)
                 .setSleepTime(sleepTime)
+                .setCharset("GBK")
                 .setTimeOut(20000)
                 .addHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8")
                 .addHeader("Accept-Encoding", "gzip, deflate, sdch")
