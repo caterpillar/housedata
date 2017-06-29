@@ -75,7 +75,12 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-        return "login";
+        return "redirect:/home/index";
+    }
+
+    @RequestMapping()
+    public String home2() {
+        return "redirect:/home/index";
     }
 
     @RequestMapping("/loginPage")
