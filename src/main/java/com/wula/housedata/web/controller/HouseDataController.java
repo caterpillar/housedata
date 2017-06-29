@@ -126,7 +126,7 @@ public class HouseDataController {
             houseDataPage = houseDataRepository.findAll(predicate, pageable);
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-        setResponseHeader(response, simpleDateFormat.format(new Date()) + "新房导出数据.xlsx");
+        setResponseHeader(response, simpleDateFormat.format(new Date()) + "新房导出数据.xls");
         OutputStream os = null;
         try {
             os = response.getOutputStream();
