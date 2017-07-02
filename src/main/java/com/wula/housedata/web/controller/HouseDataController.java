@@ -1,5 +1,6 @@
 package com.wula.housedata.web.controller;
 
+import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.wula.housedata.entity.HouseData;
 import com.wula.housedata.entity.QHouseData;
@@ -8,7 +9,6 @@ import com.wula.housedata.service.HouseDataGrabService;
 import com.wula.housedata.web.vo.HouseInfoVo;
 import com.wula.housedata.web.vo.TablePage;
 import com.wula.housedata.web.vo.TablePageable;
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.hssf.usermodel.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
@@ -85,6 +86,19 @@ public class HouseDataController {
         }
         TablePage tablePage = new TablePage(houseDataPage.getTotalElements(), houseInfoVos);
         return tablePage;
+    }
+
+    @RequestMapping("/deleteHouseData")
+    public String deleteHouseData(DataViewQuery dataViewQuery) {
+        Predicate predicate = createQueryPredicate(dataViewQuery);
+        Pageable pageable = new PageRequest(0, 100);
+        Page<HouseData> houseDataPageToDel = houseDataRepository.findAll(predicate, pageable);
+        while (houseDataPageToDel.getNumberOfElements() != 0) {
+            houseDataRepository.deleteInBatch(houseDataPageToDel);
+            houseDataPageToDel = houseDataRepository.findAll(predicate, pageable);
+        }
+        return "forward:/houseData/review";
+
     }
 
     @RequestMapping("exportExcel")
@@ -175,6 +189,9 @@ public class HouseDataController {
         if (dataViewQuery.getEndTime() != null) {
             predicate = predicate.and($.createTime.before(dataViewQuery.getEndTime()));
         }
+        if (StringUtils.isNotEmpty(dataViewQuery.getSaleStatus())) {
+            predicate = predicate.and($.saleStatus.like("%" + dataViewQuery.getSaleStatus() + "%"));
+        }
         return predicate;
     }
 
@@ -186,6 +203,7 @@ class DataViewQuery {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date endTime;
     private String cityName;
+    private String saleStatus;
 
     public Date getStartTime() {
         return startTime;
@@ -209,5 +227,13 @@ class DataViewQuery {
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public String getSaleStatus() {
+        return saleStatus;
+    }
+
+    public void setSaleStatus(String saleStatus) {
+        this.saleStatus = saleStatus;
     }
 }

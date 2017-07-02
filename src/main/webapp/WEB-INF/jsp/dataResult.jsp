@@ -81,12 +81,13 @@
             </div>
             <button id="ok" class="btn btn-default">查询</button>
             <button id="exportExcl" class="btn btn-success">导出</button>
+            <button id="deleteData" class="btn btn-danger">删除</button>
         </div>
     </div>
     <table id="table"
            data-toggle="table"
            data-url="/houseData/getHouseInfo"
-           <%--data-height="600"--%>
+    <%--data-height="600"--%>
            data-side-pagination="server"
            data-pagination="true"
            data-page-list="[5, 10, 20, 50, 100, 200]"
@@ -143,7 +144,7 @@
         todayBtn: true
     });
     var $table = $('#table'),
-            $button = $('#ok');
+        $button = $('#ok');
 
     $(function () {
         $button.click(function () {
@@ -155,7 +156,12 @@
         $('#exportExcl').click(function () {
             var url = '/houseData/exportExcel';
             var params = queryParams(undefined);
-            download(url, parseParam(params), 'POST');
+            requestUrl(url, parseParam(params), 'POST');
+        });
+        $('#deleteData').click(function () {
+            var url = '/houseData/deleteHouseData';
+            var params = queryParams(undefined);
+            requestUrl(url, parseParam(params), 'POST');
         });
     });
 
@@ -183,7 +189,7 @@
         }
         return paramStr.substr(1);
     }
-    function download(url, data, method) {
+    function requestUrl(url, data, method) {
         // 获取url和data
         if (url && data) {
             // data 是 string 或者 array/object
@@ -196,11 +202,9 @@
             });
             // request发送请求
             jQuery('<form action="' + url + '" method="' + (method || 'post') + '">' + inputs + '</form>')
-                    .appendTo('body').submit().remove();
-        }
-        ;
-    }
-    ;
+                .appendTo('body').submit().remove();
+        };
+    };
 </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.wula.housedata.repository;
 
+import com.querydsl.core.types.Predicate;
 import com.wula.housedata.entity.HouseData;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,5 +17,12 @@ import java.util.List;
 public interface HouseDataRepository extends JpaRepository<HouseData, Long>, QueryDslPredicateExecutor<HouseData> {
     List<HouseData> findByCityIdAndTitle(Long cityId, String title);
     Page<HouseData> findByCityName(String cityName, Pageable pageable);
+
+    /**
+     * 删除条件内数据
+     *
+     * @param predicate
+     */
+    void deleteAllBy(Predicate predicate);
 
 }

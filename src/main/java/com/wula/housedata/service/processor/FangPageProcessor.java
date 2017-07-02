@@ -122,6 +122,11 @@ public class FangPageProcessor implements PageProcessor {
         }
         for (Selectable selectable : houseHtmlNode.nodes()) {
             HouseInfo houseInfo = houseHtmlElementConverter.convert(cityId, cityName, selectable);
+            String secondFlag = trimToEmpty(selectable.xpath("//div[@class='fl']/span/text()").get());
+            System.out.println("secondFlag===================:" + secondFlag);
+            if (StringUtils.isNotEmpty(secondFlag) && secondFlag.equals("出售房源：")) {
+                break;
+            }
             if (StringUtils.isNotEmpty(section)) {
                 houseInfo.setSection(section);
             }
